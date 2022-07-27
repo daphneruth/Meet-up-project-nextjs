@@ -28,12 +28,15 @@ function HomePage() {
   return <MeetupList meetups={setLoadedMeeetups} />;
 }
 
-export function getStaticProps() {
-  return {
-    props: {
-      meetups: DUMMY_MEETUPS,
-    },
-    revalidate: 2,
-  };
+export async function getServerSideProp(){
+  
 }
+//export function getStaticProps() {
+  //return {
+    //props: {
+      //meetups: DUMMY_MEETUPS,
+    //},
+    //revalidate: 2,
+  //};
+//}
 export default HomePage;
