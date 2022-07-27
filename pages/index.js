@@ -21,8 +21,9 @@ const DUMMY_MEETUPS = [
 ];
 
 function HomePage() {
-  useEffect();
+  useEffect(() => {
   setLoadedMeeetups();
+  },[]);
   return (
   <MeetupList meetups={DUMMY_MEETUPS} />);
 }
