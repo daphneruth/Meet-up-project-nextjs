@@ -10,4 +10,4 @@ function MeetupDetails() {
         />
       );
 }
-export default MeetupDetail;
+export default MeetupDetails;
