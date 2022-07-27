@@ -31,6 +31,7 @@ function HomePage() {
 export async function getServerSideProp(context){
 
   const req =context.req;
+  const res =context.res;
 
    return {
     props:{DUMMY_MEETUPS}
