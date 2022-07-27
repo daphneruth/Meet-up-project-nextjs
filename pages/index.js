@@ -29,7 +29,9 @@ function HomePage() {
 }
 
 export async function getServerSideProp(){
-  
+   return {
+    props:{}
+   }
 }
 //export function getStaticProps() {
   //return {
