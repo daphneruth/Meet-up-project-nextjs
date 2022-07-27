@@ -22,9 +22,9 @@ const DUMMY_MEETUPS = [
 
 function HomePage() {
   useEffect(() => {
-  setLoadedMeeetups(DUMMY_MEETUPS);
-  },[]);
-  return (
-  <MeetupList meetups={setLoadedMeeetups} />);
+    setLoadedMeeetups(DUMMY_MEETUPS);
+  }, []);
+
+  return <MeetupList meetups={setLoadedMeeetups} />;
 }
 export default HomePage;
