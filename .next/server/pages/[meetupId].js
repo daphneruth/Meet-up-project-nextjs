@@ -1,31 +1,74 @@
-"use strict";
 (() => {
 var exports = {};
 exports.id = 549;
 exports.ids = [549];
 exports.modules = {
 
-/***/ 573:
+/***/ 3780:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"detail": "MeetupDetail_detail__HjAUt"
+};
+
+
+/***/ }),
+
+/***/ 8721:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../../components/meetups/MeetupDetail'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ _meetupId_)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: ./components/meetups/MeetupDetail.module.css
+var MeetupDetail_module = __webpack_require__(3780);
+var MeetupDetail_module_default = /*#__PURE__*/__webpack_require__.n(MeetupDetail_module);
+;// CONCATENATED MODULE: ./components/meetups/MeetupDetail.js
+
+
+function MeetupDetail(props) {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (MeetupDetail_module_default()).detail,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                src: props.image,
+                alt: props.title
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                children: props.title
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("address", {
+                children: props.address
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                children: props.description
+            })
+        ]
+    });
+}
+/* harmony default export */ const meetups_MeetupDetail = (MeetupDetail);
+
+;// CONCATENATED MODULE: ./pages/[meetupId]/index.js
 
 
 function MeetupDetails() {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Object(function webpackMissingModule() { var e = new Error("Cannot find module '../../components/meetups/MeetupDetail'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+    return /*#__PURE__*/ jsx_runtime_.jsx(meetups_MeetupDetail, {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg",
         title: "First Meetup",
         address: "Some Street 5, Some City",
         description: "This is a first meetup"
     });
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MeetupDetails);
+/* harmony default export */ const _meetupId_ = (MeetupDetails);
 
 
 /***/ }),
@@ -33,6 +76,7 @@ function MeetupDetails() {
 /***/ 997:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react/jsx-runtime");
 
 /***/ })
@@ -44,7 +88,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(573));
+var __webpack_exports__ = (__webpack_exec__(8721));
 module.exports = __webpack_exports__;
 
 })();
